@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+require('babel/polyfill');
+var program = require('commander');
+var pkg = require('../package');
+var component = require('../dist/index');
+
+program
+    .parse(process.argv);
+
+var names = program.args;
+if (!names.length) {
+    console.log('You should provide the filepath to preview');
+    return;
+}
+
+var name = names[0]; // 无视多余的参数
+var cwd = process.cwd();
+
+component({
+    name: name,
+    cwd: cwd
+}).catch(function(e) {
+  console.log('Error!', e, e.stack);
+});
