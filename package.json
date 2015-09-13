@@ -1,6 +1,6 @@
 {
   "name": "mdcat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple markdown preview cli tool",
   "main": "index.js",
   "scripts": {
