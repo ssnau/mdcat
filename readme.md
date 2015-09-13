@@ -1,5 +1,4 @@
-mdcat
--------
+#mdcat
 
 a simple markdown preview cli tool.
 

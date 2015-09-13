@@ -1,7 +1,7 @@
 {
   "name": "mdcat",
   "version": "1.0.0",
-  "description": "mdcat -------",
+  "description": "a simple markdown preview cli tool",
   "main": "index.js",
   "scripts": {
     "build": "babel lib --out-dir dist",
