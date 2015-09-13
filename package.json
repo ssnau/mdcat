@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "a simple markdown preview cli tool",
   "main": "index.js",
+  "bin": "bin/mdcat",
   "scripts": {
     "build": "babel lib --out-dir dist",
     "watch": "babel  --watch lib --out-dir dist"
@@ -10,13 +11,9 @@
   "dependencies": {
     "babel": "^5.1.11",
     "babel-core": "^5.0.8",
-    "babel-eslint": "^2.0.2",
-    "babel-loader": "^5.0.0",
-    "chalk": "^1.1.0",
     "commander": "^2.8.1",
     "highlight.js": "^8.8.0",
-    "marked": "^0.3.5",
-    "typocss": "^1.4.0"
+    "marked": "^0.3.5"
   },
   "author": "ssnau",
   "license": "MIT",
