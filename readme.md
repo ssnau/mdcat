@@ -13,7 +13,7 @@ npm install mdcat -g
 Usage
 ------
 
-use mdcat to open preview md files.
+use mdcat to preview md files.
 
 ```
 mdcat readme.md
