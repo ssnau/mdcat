@@ -1,7 +1,7 @@
 {
   "name": "mdcat",
   "version": "1.0.0",
-  "description": "",
+  "description": "mdcat -------",
   "main": "index.js",
   "scripts": {
     "build": "babel lib --out-dir dist",
@@ -18,6 +18,20 @@
     "marked": "^0.3.5",
     "typocss": "^1.4.0"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "ssnau",
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssnau/mdcat.git"
+  },
+  "keywords": [
+    "markdown",
+    "md",
+    "preview"
+  ],
+  "bugs": {
+    "url": "https://github.com/ssnau/mdcat/issues"
+  },
+  "homepage": "https://github.com/ssnau/mdcat#readme"
 }
