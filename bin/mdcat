@@ -1,23 +1,19 @@
 #!/usr/bin/env node
-var program = require('commander');
-var pkg = require('../package.json');
-var component = require('../lib/index');
+const { program } = require('commander');
+const pkg = require('../package.json');
+const component = require('../lib/index');
 
 program
-    .parse(process.argv);
+  .version(pkg.version)
+  .argument('<file>', 'markdown file to preview')
+  .action((file) => {
+    const cwd = process.cwd();
 
-var names = program.args;
-if (!names.length) {
-    console.log('You should provide the filepath to preview');
-    return;
-}
-
-var name = names[0]; // 无视多余的参数
-var cwd = process.cwd();
-
-component({
-    name: name,
-    cwd: cwd
-}).catch(function(e) {
-  console.log('Error!', e, e.stack);
-});
+    component({
+      name: file,
+      cwd: cwd
+    }).catch(function(e) {
+      console.log('Error!', e, e.stack);
+    });
+  })
+  .parse(process.argv);
