@@ -37,11 +37,11 @@ function safe(fn) {
 }
 var css = '';
 safe(function (__) {
-  return css = _fs2["default"].readFileSync(_path2["default"].join(__dirname, '../vendor/typo.css'), 'utf-8');
+  return css = _fs2["default"].readFileSync(_path2["default"].join(__dirname, '../vendor/github-light.css'), 'utf-8');
 });
 
 function html(content) {
-  return "\n  <html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <style>" + css + "</style>\n    <style>\n    body { padding: 10px; margin: 10px; }\n\n    </style>\n  </head>\n  <body>\n  " + content + "\n  </body>\n  </html>\n  ";
+  return "\n  <html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <style>" + css + "</style>\n    <style>\n    body { padding: 10px; margin: 10px; margin: 0 auto; max-width: 880px; }\n\n    </style>\n  </head>\n  <body>\n  " + content + "\n  </body>\n  </html>\n  ";
 }
 
 module.exports = function callee$0$0(_ref) {
