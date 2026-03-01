@@ -4,16 +4,11 @@
   "description": "a simple markdown preview cli tool",
   "main": "index.js",
   "bin": "bin/mdcat",
-  "scripts": {
-    "build": "babel lib --out-dir dist",
-    "watch": "babel  --watch lib --out-dir dist"
-  },
+  "scripts": {},
   "dependencies": {
-    "babel": "^5.1.11",
-    "babel-core": "^5.0.8",
-    "commander": "^2.8.1",
-    "highlight.js": "^8.8.0",
-    "marked": "^0.3.5"
+    "commander": "^12.1.0",
+    "highlight.js": "^11.10.0",
+    "marked": "^12.0.2"
   },
   "author": "ssnau",
   "license": "MIT",

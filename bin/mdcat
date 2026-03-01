@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-require('babel/polyfill');
 var program = require('commander');
-var pkg = require('../package');
-var component = require('../dist/index');
+var pkg = require('../package.json');
+var component = require('../lib/index');
 
 program
     .parse(process.argv);
